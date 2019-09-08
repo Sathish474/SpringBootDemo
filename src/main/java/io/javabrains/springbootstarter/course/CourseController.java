@@ -20,6 +20,7 @@ public class CourseController {
 
 	@RequestMapping("/topics/{id}/courses")
 	public List<Course> getAllCourses(@PathVariable String id) {
+		Sytem.out.println("Jenkins Test");
 		return courseservice.getAllCourses(id);
 	}
 	
